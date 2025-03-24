@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nhập số tiền -->
+    <EditText
+        android:id="@+id/edtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số tiền"
+        android:inputType="numberDecimal" />
+
+    <!-- Chọn tiền tệ nguồn -->
+    <Spinner
+        android:id="@+id/spinnerFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Tiền sau khi chuyển đổi -->
+    <TextView
+        android:id="@+id/tvConvertedAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số tiền sau chuyển đổi"
+        android:textSize="18sp"
+        android:paddingTop="10dp"/>
+
+    <!-- Chọn tiền tệ đích -->
+    <Spinner
+        android:id="@+id/spinnerTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Tỷ giá -->
+    <TextView
+        android:id="@+id/tvExchangeRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:paddingTop="10dp"/>
+
+</LinearLayout>
